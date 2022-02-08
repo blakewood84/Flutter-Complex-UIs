@@ -7,5 +7,5 @@ This complext UI is an example of button animations with a Matrix4 overlap.
 ### Recording:
 
 <p align="center">
-    <img src="checklist_buttons/images/recording.gif" alt="Screen Recording" height="400" width="200" />
+    <img src="./images/recording.gif" alt="Screen Recording" height="400" width="200" />
 </p>
