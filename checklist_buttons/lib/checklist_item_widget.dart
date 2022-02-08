@@ -51,55 +51,56 @@ class _ChecklistItemWidgetState extends State<ChecklistItemWidget> {
                             ),
                           ),
                         ),
-                      if(this.issue)
-                        Container(
-                          padding: const EdgeInsets.only(top: 0, left: 15, right: 15, bottom: 20),
-                          margin: const EdgeInsets.only(bottom: 10),
-                          child: TextFormField(
-                            initialValue: '', 
-                            onChanged: (val) {
 
-                            }, 
-                            validator: (val) {}, 
-                            obscureText: false, 
-                            textCapitalization: TextCapitalization.words,
-                            decoration: const InputDecoration(
-                            floatingLabelBehavior: FloatingLabelBehavior.always,
-                            labelText: 'A Question',
-                            contentPadding: EdgeInsets.symmetric(horizontal: 12, vertical: 20),
-                            //errorStyle: TextStyle(color: Colors.red, fontSize: 18),
-                            labelStyle: TextStyle(),
-                            enabledBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
-                                color: Colors.grey,
-                                width: 1.0,
+                        if(this.issue)
+                          Container(
+                            padding: const EdgeInsets.only(top: 0, left: 15, right: 15, bottom: 20),
+                            margin: const EdgeInsets.only(bottom: 10),
+                            child: TextFormField(
+                              initialValue: '', 
+                              onChanged: (val) {
+
+                              }, 
+                              validator: (val) {}, 
+                              obscureText: false, 
+                              textCapitalization: TextCapitalization.words,
+                              decoration: const InputDecoration(
+                              floatingLabelBehavior: FloatingLabelBehavior.always,
+                              labelText: 'A Question',
+                              contentPadding: EdgeInsets.symmetric(horizontal: 12, vertical: 20),
+                              //errorStyle: TextStyle(color: Colors.red, fontSize: 18),
+                              labelStyle: TextStyle(),
+                              enabledBorder: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: Colors.grey,
+                                  width: 1.0,
+                                ),
+                              ),
+                              disabledBorder: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: Colors.grey,
+                                  width: 1.0,
+                                ),
+                              ),
+                              focusedBorder: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: Colors.lightBlue,
+                                  width: 2.0,
+                                ),
+                              ),
+                              errorBorder: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: Colors.red,
+                                  width: 2.0,
+                                ),
+                              ),
+                              fillColor: Colors.white,
+                              filled: true,
+                              isDense: true
+                              //errorStyle: TextStyle(color: Colors.red)
                               ),
                             ),
-                            disabledBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
-                                color: Colors.grey,
-                                width: 1.0,
-                              ),
-                            ),
-                            focusedBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
-                                color: Colors.lightBlue,
-                                width: 2.0,
-                              ),
-                            ),
-                            errorBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
-                                color: Colors.red,
-                                width: 2.0,
-                              ),
-                            ),
-                            fillColor: Colors.white,
-                            filled: true,
-                            isDense: true
-                            //errorStyle: TextStyle(color: Colors.red)
-                            ),
-                          ),
-                        )
+                          )
                       ],
                     ),
                   )
